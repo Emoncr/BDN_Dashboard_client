@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap")
+  @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+  @apply font-primary m-0 p-0;
+}
+
+.heading {
+  @apply font-primary text-text_primary_black dark:text-dark_text_primary;
+}
+.content {
+  @apply font-primary text-text_secondary_gray dark:text-dark_text_secondary;
+}
+
+.navLink {
+  @apply text-sm lg:text-base flex items-center gap-2 py-4 px-6 rounded-10  w-full  dark:text-dark_text_secondary  font-semibold transition-all duration-200 ;
+}
